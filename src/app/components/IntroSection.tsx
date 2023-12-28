@@ -116,7 +116,7 @@ const IntroSection = () => {
         </div>
       </div>
       <div className="lg:w-2/3 md:w-1/2 flex justify-center text-gray-600 text-center">
-        <p>Hello! My name is Ryan and I'm a software developer.</p>
+        <p>Hello! My name is Ryan and I&apos;m a software developer.</p>
       </div>
     </section>
   );
