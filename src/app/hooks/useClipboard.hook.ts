@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
 export const useClipboard = () => {
-  if (navigator) {
-    return navigator.clipboard;
-  }
-  return null;
+  const [clipboard, setClipboard] = useState<Clipboard | null>(null);
+  useEffect(() => {
+    if (navigator) setClipboard(navigator.clipboard);
+  }, []);
+
+  return clipboard;
 };
