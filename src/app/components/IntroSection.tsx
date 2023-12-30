@@ -9,6 +9,8 @@ import { FaGithub } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { IoCopyOutline } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
+import { RiFilePaperLine } from "react-icons/ri";
+import ScrollAnimation from "./ScrollAnimation";
 
 const IntroSection = () => {
   const [email, setEmail] = useState(false);
@@ -65,6 +67,16 @@ const IntroSection = () => {
 
         <div className="flex gap-1 items-center justify-center">
           <a
+            title="Resume"
+            href="https://resume.creddle.io/resume/cz0ik4eo5qh"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:bg-gray-200 p-2 rounded-xl transition ease-in-out duration-200 text-gray-600"
+          >
+            <RiFilePaperLine />
+          </a>
+          <a
+            title="Linkedin"
             href="https://www.linkedin.com/in/ryan-punwasi/"
             target="_blank"
             rel="noreferrer"
@@ -73,6 +85,7 @@ const IntroSection = () => {
             <FaLinkedinIn />
           </a>
           <a
+            title="Github"
             className="text-black hover:bg-gray-200 p-2 rounded-xl transition ease-in-out duration-200"
             href="https://github.com/ryanpunwasi"
             target="_blank"
@@ -81,9 +94,10 @@ const IntroSection = () => {
             <FaGithub />
           </a>
           <a
+            title="Email"
             onClick={() => (email ? closeEmail() : openEmail())}
             href="mailto:ryan.punwasi@gmail.com"
-            className="text-black hover:bg-gray-200 p-2 rounded-xl transition ease-in-out duration-200"
+            className="text-gray-600 hover:bg-gray-200 p-2 rounded-xl transition ease-in-out duration-200"
           >
             <MdOutlineMail />
           </a>
@@ -115,9 +129,7 @@ const IntroSection = () => {
           </p>
         </div>
       </div>
-      <div className="lg:w-2/3 md:w-1/2 flex justify-center text-gray-600 text-center">
-        <p>Hello! My name is Ryan and I&apos;m a software developer.</p>
-      </div>
+      <ScrollAnimation />
     </section>
   );
 };
