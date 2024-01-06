@@ -24,12 +24,13 @@ const ScrollAnimation = () => {
       <div className="min-h-full flex flex-col justify-center items-center relative px-40 gap-2">
         <p className="text-justify">
           Hello! My name is Ryan and I&apos;m a software developer with
-          experience creating web applications. I'm a passionate and obsessive
-          builder with a strong work ethic and a deep love of learning.
+          experience creating web applications. I&apos;m a passionate and
+          obsessive builder with a strong work ethic and a deep love of
+          learning.
         </p>
         <p className="text-justify">
-          When I'm not coding, I&apos;m usually catching the game or watching a
-          movie. Currently, I&apos;m studying to get my AWS (DVA-C02)
+          When I&apos;m not coding, I&apos;m usually catching the game or
+          watching a movie. Currently, I&apos;m studying to get my AWS (DVA-C02)
           certification.
         </p>
         <span
