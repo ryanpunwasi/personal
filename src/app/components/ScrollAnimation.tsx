@@ -12,7 +12,7 @@ const ScrollAnimation = () => {
   const calculateMouseIconOpacity = (scrollTop: number) => {
     if (scrollTop >= 100) return 0;
     const rawOpacity = scrollTop / 100;
-    return 1 - Math.round(rawOpacity * 100) / 100;
+    return 1 - Math.round(rawOpacity * 1000) / 1000;
   };
 
   return (
