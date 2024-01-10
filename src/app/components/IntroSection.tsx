@@ -40,6 +40,7 @@ const IntroSection = () => {
             fill
             className="rounded-full shadow-md select-none"
             style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw, 33vw"
           ></Image>
         </div>
         <p className="text-gray-700">Software Developer</p>
