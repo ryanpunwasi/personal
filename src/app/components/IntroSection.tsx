@@ -51,6 +51,16 @@ const IntroSection = () => {
         <div className="flex items-center justify-center gap-2">
           <div className="flex gap-2">
             <PiCertificate />
+            <p className="text-sm text-gray-600">
+              AWS Certified Developer - Associate
+            </p>
+          </div>
+
+          <p className="text-xs text-gray-500">2024</p>
+        </div>
+        <div className="flex items-center justify-center gap-2">
+          <div className="flex gap-2">
+            <PiCertificate />
             <p className="text-sm text-gray-600">Diploma of Web Development</p>
           </div>
 
