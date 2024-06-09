@@ -30,8 +30,7 @@ const ScrollAnimation = () => {
         </p>
         <p className="text-justify">
           When I&apos;m not coding, I&apos;m usually catching the game or
-          watching a movie. Currently, I&apos;m studying to get my AWS (DVA-C02)
-          certification.
+          watching a movie.
         </p>
         <span
           className="absolute left-1/2 bottom-16 flex flex-col justify-center items-center gap-2 ease-in-out select-none"
