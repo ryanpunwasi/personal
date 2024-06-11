@@ -1,8 +1,8 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
 import { BsMouseFill } from "react-icons/bs";
-import { RiMovie2Line } from "react-icons/ri";
-import { GiChemicalDrop } from "react-icons/gi";
+import { FaGlobeAmericas } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -50,27 +50,38 @@ const ScrollAnimation = () => {
           Projects
         </h2>
         <ul className="flex flex-col w-full items-center gap-3">
-          <li className="bg-gray-50 rounded-xl w-96 shadow-sm border border-gray-100">
-            <p className="text-xl">🎬</p>
-            <p>Memo35</p>
-            <div>
-              <a href="https://memo35.com" target="_blank" rel="noreferrer">
-                Live
+          <li className="bg-gray-50 rounded-xl w-96 shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
+            <p className="text-xl absolute top-50 left-10">🎬</p>
+            <p className="text-sm text-gray-600">Memo35</p>
+            <div className="flex absolute bottom-2 right-4">
+              <a
+                href="https://memo35.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm hover:bg-gray-200 p-2 rounded-lg transition ease-in-out duration-100"
+              >
+                <FaGlobeAmericas />
               </a>
             </div>
           </li>
-          <li className="bg-gray-50 rounded-xl w-96 shadow-sm border border-gray-100">
-            <p className="text-xl">🧪</p>
-            <p>Valentnost</p>
-            <div>
+          <li className="bg-gray-50 rounded-xl w-96 shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
+            <p className="text-xl absolute top-50 left-10">🧪</p>
+            <p className="text-sm text-gray-600">Valentnost</p>
+            <div className="flex gap-0.5 items-center absolute bottom-2 right-4">
               <a
                 href="https://github.com/ryanpunwasi/valentnost"
                 target="_blank"
+                className="text-sm hover:bg-gray-200 p-2 rounded-lg transition ease-in-out duration-100"
               >
-                Github
+                <FaGithub />
               </a>
-              <a href="https://valentnost.app" target="_blank" rel="noreferrer">
-                Live
+              <a
+                href="https://valentnost.app"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm hover:bg-gray-200 p-2 rounded-lg transition ease-in-out duration-100"
+              >
+                <FaGlobeAmericas />
               </a>
             </div>
           </li>
