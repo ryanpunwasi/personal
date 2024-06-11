@@ -1,6 +1,9 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
 import { BsMouseFill } from "react-icons/bs";
+import { RiMovie2Line } from "react-icons/ri";
+import { GiChemicalDrop } from "react-icons/gi";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -26,11 +29,10 @@ const ScrollAnimation = () => {
           Hello! My name is Ryan and I&apos;m a software developer with
           experience creating web applications. I&apos;m a passionate and
           obsessive builder with a strong work ethic and a deep love of
-          learning.
-        </p>
-        <p className="text-justify">
-          When I&apos;m not coding, I&apos;m usually catching the game or
-          watching a movie.
+          learning. <br />
+          <br />
+          When I&apos;m not coding, I&apos;m usually reading, catching the game
+          or watching a movie.
         </p>
         <span
           className="absolute left-1/2 bottom-16 flex flex-col justify-center items-center gap-2 ease-in-out select-none"
@@ -43,20 +45,36 @@ const ScrollAnimation = () => {
           <span className="text-sm font-medium">Scroll</span>
         </span>
       </div>
-      <div className="min-h-full flex justify-center items-center">
-        <p className="text-center">
-          Hello! My name is Ryan and I&apos;m a software developer.
-        </p>
-      </div>
-      <div className="min-h-full flex justify-center items-center border border-black">
-        <p className="text-center">
-          Hello! My name is Ryan and I&apos;m a software developer.
-        </p>
-      </div>
-      <div className="min-h-full flex justify-center items-center">
-        <p className="text-center">
-          Hello! My name is Ryan and I&apos;m a software developer.
-        </p>
+      <div className="relative min-h-full border flex flex-col justify-center items-center border-red-100">
+        <h2 className="text-center text-xl absolute top-20 left-20">
+          Projects
+        </h2>
+        <ul className="flex flex-col w-full items-center gap-3">
+          <li className="bg-gray-50 rounded-xl w-96 shadow-sm border border-gray-100">
+            <p className="text-xl">🎬</p>
+            <p>Memo35</p>
+            <div>
+              <a href="https://memo35.com" target="_blank" rel="noreferrer">
+                Live
+              </a>
+            </div>
+          </li>
+          <li className="bg-gray-50 rounded-xl w-96 shadow-sm border border-gray-100">
+            <p className="text-xl">🧪</p>
+            <p>Valentnost</p>
+            <div>
+              <a
+                href="https://github.com/ryanpunwasi/valentnost"
+                target="_blank"
+              >
+                Github
+              </a>
+              <a href="https://valentnost.app" target="_blank" rel="noreferrer">
+                Live
+              </a>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   );
