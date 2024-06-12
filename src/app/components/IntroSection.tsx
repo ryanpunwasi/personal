@@ -84,7 +84,7 @@ const IntroSection = () => {
             rel="noreferrer"
             className="hover:bg-gray-200 p-2 rounded-xl transition ease-in-out duration-200 text-gray-600"
           >
-            <RiFilePaperLine />
+            <RiFilePaperLine style={{ color: "#2e8686" }} />
           </a>
           <a
             title="Linkedin"
@@ -110,7 +110,7 @@ const IntroSection = () => {
             href="mailto:ryan.punwasi@gmail.com"
             className="text-gray-600 hover:bg-gray-200 p-2 rounded-xl transition ease-in-out duration-200"
           >
-            <MdOutlineMail />
+            <MdOutlineMail style={{ color: "#c5221f" }} />
           </a>
         </div>
         <div className={`${email ? "visible" : "invisible"}`}>
