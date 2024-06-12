@@ -49,10 +49,16 @@ const ScrollAnimation = () => {
         <h2 className="text-center text-xl absolute top-20 left-20">
           Projects
         </h2>
-        <ul className="flex flex-col w-full items-center gap-3">
-          <li className="bg-gray-50 rounded-xl w-96 shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
+        <ul className="flex flex-col w-fit min-w-[600px] items-center gap-3">
+          <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
             <p className="text-xl absolute top-50 left-10">🎬</p>
-            <p className="text-sm text-gray-600">Memo35</p>
+            <div>
+              <p className="text-sm text-gray-600">Memo35</p>
+              <p className="text-xs text-gray-400">
+                Note-taking SaaS product for film students
+              </p>
+            </div>
+
             <div className="flex absolute bottom-2 right-4">
               <a
                 href="https://memo35.com"
@@ -64,9 +70,15 @@ const ScrollAnimation = () => {
               </a>
             </div>
           </li>
-          <li className="bg-gray-50 rounded-xl w-96 shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
+          <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
             <p className="text-xl absolute top-50 left-10">🧪</p>
-            <p className="text-sm text-gray-600">Valentnost</p>
+            <div>
+              <p className="text-sm text-gray-600">Valentnost</p>
+              <p className="text-xs text-gray-400">
+                Web-based app for memorizing periodic element names and symbols
+              </p>
+            </div>
+
             <div className="flex gap-0.5 items-center absolute bottom-2 right-4">
               <a
                 href="https://github.com/ryanpunwasi/valentnost"
