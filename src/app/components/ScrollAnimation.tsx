@@ -21,10 +21,10 @@ const ScrollAnimation = () => {
   return (
     <div
       ref={boxRef}
-      className="lg:w-2/3 md:w-1/2 text-gray-500 text-center overflow-y-scroll min-h-full h-full"
+      className="lg:w-2/3 md:w-1/2 text-gray-500 text-center overflow-y-scroll min-h-full h-full snap-y snap-mandatory"
       onScroll={() => setScrollTop(boxRef.current?.scrollTop || 0)}
     >
-      <div className="min-h-full flex flex-col justify-center items-center relative px-40 gap-2">
+      <div className="min-h-full flex flex-col justify-center items-center relative px-40 gap-2 snap-center">
         <p className="text-justify">
           Hello! My name is Ryan and I&apos;m a software developer with
           experience creating web applications. I&apos;m a passionate and
@@ -45,7 +45,7 @@ const ScrollAnimation = () => {
           <span className="text-sm font-medium">Scroll</span>
         </span>
       </div>
-      <div className="relative min-h-full border flex flex-col justify-center items-center border-red-100">
+      <div className="relative min-h-full border flex flex-col justify-center items-center border-red-100 snap-center">
         <h2 className="text-center text-xl absolute top-20 left-20">
           Projects
         </h2>
@@ -75,7 +75,7 @@ const ScrollAnimation = () => {
             <div>
               <p className="text-sm text-gray-600">Valentnost</p>
               <p className="text-xs text-gray-400">
-                Web-based app for memorizing periodic element names and symbols
+                Web app for memorizing periodic element names and symbols
               </p>
             </div>
 
