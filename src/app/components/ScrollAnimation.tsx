@@ -45,7 +45,7 @@ const ScrollAnimation = () => {
           <span className="text-sm font-medium">Scroll</span>
         </span>
       </div>
-      <div className="relative min-h-full border flex flex-col justify-center items-center border-red-100 snap-center">
+      <div className="relative min-h-full border flex flex-col justify-center items-center snap-center">
         <h2 className="text-center text-xl absolute top-20 left-20">
           Projects
         </h2>
