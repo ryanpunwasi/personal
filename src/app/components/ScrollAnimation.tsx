@@ -47,7 +47,7 @@ const ScrollAnimation = () => {
           Projects
         </h2>
         <ul className="flex flex-col w-full max-w-[600px] lg:min-w-[600px] items-center gap-3">
-          <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
+          <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-8 relative">
             <p className="text-xl absolute top-50 left-10">🎬</p>
             <div>
               <p className="text-sm text-gray-600">Memo35</p>
@@ -67,7 +67,7 @@ const ScrollAnimation = () => {
               </a>
             </div>
           </li>
-          <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
+          <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-8 relative">
             <p className="text-xl absolute top-50 left-10">🧪</p>
             <div>
               <p className="text-sm text-gray-600">Valentnost</p>
