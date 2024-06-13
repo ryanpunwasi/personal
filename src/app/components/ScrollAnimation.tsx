@@ -1,11 +1,8 @@
 "use client";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import { BsMouseFill } from "react-icons/bs";
 import { FaGlobeAmericas } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
 const ScrollAnimation = () => {
   const boxRef = useRef<HTMLDivElement | null>(null);
@@ -21,10 +18,10 @@ const ScrollAnimation = () => {
   return (
     <div
       ref={boxRef}
-      className="lg:w-2/3 md:w-1/2 text-gray-500 text-center overflow-y-scroll min-h-full h-full snap-y snap-mandatory"
+      className="lg:w-2/3 w-full text-gray-500 text-center overflow-y-scroll min-h-full h-full snap-y snap-mandatory"
       onScroll={() => setScrollTop(boxRef.current?.scrollTop || 0)}
     >
-      <div className="min-h-full flex flex-col justify-center items-center relative px-40 gap-2 snap-center">
+      <div className="min-h-full flex flex-col justify-center items-center relative lg:px-40 px-5 md:px-10 gap-2 snap-center">
         <p className="text-justify">
           Hello! My name is Ryan and I&apos;m a software developer with
           experience creating web applications. I&apos;m a passionate and
@@ -49,7 +46,7 @@ const ScrollAnimation = () => {
         <h2 className="text-center text-xl absolute top-20 left-20">
           Projects
         </h2>
-        <ul className="flex flex-col w-fit min-w-[600px] items-center gap-3">
+        <ul className="flex flex-col w-full max-w-[600px] lg:min-w-[600px] items-center gap-3">
           <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
             <p className="text-xl absolute top-50 left-10">🎬</p>
             <div>
