@@ -68,6 +68,33 @@ const ScrollAnimation = () => {
             </div>
           </li>
           <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-8 relative">
+            <p className="text-xl absolute top-50 left-10">💤</p>
+            <div>
+              <p className="text-sm text-gray-600">Lazy Loading Comments</p>
+              <p className="text-xs text-gray-400">
+                Lazy loading implementation in the style of Youtube comments
+              </p>
+            </div>
+
+            <div className="flex gap-0.5 items-center absolute bottom-2 right-4">
+              <a
+                href="https://github.com/ryanpunwasi/lazy-loading"
+                target="_blank"
+                className="text-sm hover:bg-gray-200 p-2 rounded-lg transition ease-in-out duration-100"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://lazyloadingcomments.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm hover:bg-gray-200 p-2 rounded-lg transition ease-in-out duration-100"
+              >
+                <FaGlobeAmericas />
+              </a>
+            </div>
+          </li>
+          <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-8 relative">
             <p className="text-xl absolute top-50 left-10">🧪</p>
             <div>
               <p className="text-sm text-gray-600">Valentnost</p>
