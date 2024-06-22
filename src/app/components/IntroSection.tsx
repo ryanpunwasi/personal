@@ -275,11 +275,11 @@ const IntroSection = () => {
               game or watching a movie.
             </p>
           </div>
-          <div className="relative min-h-full border flex flex-col justify-center items-center snap-center">
-            <h2 className="text-center text-xl absolute top-20 left-20">
+          <div className="relative min-h-full flex flex-col justify-center items-center snap-center">
+            <h2 className="text-center text-xl absolute top-10 left-10">
               Projects
             </h2>
-            <ul className="flex flex-col w-full max-w-[600px] lg:min-w-[600px] items-center gap-3">
+            <ul className="flex flex-col w-full max-w-[600px] lg:min-w-[600px] items-center gap-3 px-1">
               <li className="bg-gray-50 rounded-xl w-full shadow-sm border border-gray-200 flex justify-center items-center py-7 relative">
                 <p className="text-xl absolute top-50 left-10">🎬</p>
                 <div>
